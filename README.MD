@@ -38,3 +38,20 @@
 <img src="Captures/inter3.PNG">
 <h4>l'interface ConsultationRepository</h4>
 <img src="Captures/inter4.PNG">
+<h4>Pour testser on a deux solutions</h4>
+<h4>La premiére </h4>
+<img src="Captures/sol1.PNG">
+<h4>La deuxiéme est le plus recommandé</h4>
+<img src="Captures/sol2.PNG">
+<h4>On fait run </h4>
+<img src="Captures/h2-sols.PNG">
+<h4>meme pour medecin</h4>
+<img src="Captures/med1.PNG">
+<img src="Captures/h2med.PNG">
+<h4>meme pour RendezVous</h4>
+<img src="Captures/rdvv.PNG">
+<img src="Captures/rdvH2.PNG">
+<img src="Captures/h2rdv2.PNG">
+<h4>meme pour Consultation</h4>
+<img src="Captures/cont.PNG">
+<img src="Captures/h2consult.PNG">
