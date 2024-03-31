@@ -11,17 +11,30 @@
 <img src="Captures/Consult.PNG">
 <h4>Enumeration StatusRDV</h4>
 <img src="Captures/Status.PNG">
-<h3>Aprés on fait le Mapping Objet Relationnel par les annotations</h3>
-<h3>Dans la classe Patient</h3>
+<h4>Aprés on fait le Mapping Objet Relationnel par les annotations</h4>
+<h4>Dans la classe Patient</h4>
 <img src="Captures/annot1.PNG">
-h3>Dans la classe RendezVous</h3>
+<h4>Dans la classe RendezVous</h4>
 <img src="Captures/annot2.PNG">
-h3>Dans la classe Consultation</h3>
+<h4>Dans la classe Consultation</h4>
 <img src="Captures/annot3.PNG">
-h3>Dans la classe Medecin</h3>
+<h4>Dans la classe Medecin</h4>
 <img src="Captures/annot4.PNG">
-<h3>Pour verifier la base de données est ce qu'il est géneré on ajoute à "application.properties" quelques instructions </h3>
+<h4>Pour verifier la base de données est ce qu'il est géneré on ajoute à "application.properties" quelques instructions </h4>
 <img src="Captures/h2.PNG">
-<h3>Aprés on met run la classe "HospitalApplication</h3>
-<h3>dans browser on met localhost:8086/h2-console</h3>
+<h4>Aprés on met run la classe "HospitalApplication</h4>
+<h4>dans browser on met localhost:8086/h2-console</h4>
 <img src="Captures/h2-console.PNG">
+<h4>On connect</h4>
+<img src="Captures/h2-console00.PNG">
+<img src="Captures/h2-console01.PNG">
+<h4>Aprés on va crée des interfaces JPa Repositories</h4>
+<h4>On crée un package Repository dans laquel on met les interfaces</h4>
+<h4>l'interface PatientRepository</h4>
+<img src="Captures/inter1.PNG">
+<h4>l'interface MedecinRepository</h4>
+<img src="Captures/inter2.PNG">*
+<h4>l'interface RendezVousRepository</h4>
+<img src="Captures/inter3.PNG">
+<h4>l'interface ConsultationRepository</h4>
+<img src="Captures/inter4.PNG">
