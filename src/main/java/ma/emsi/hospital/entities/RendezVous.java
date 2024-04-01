@@ -1,5 +1,6 @@
 package ma.emsi.hospital.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -18,6 +19,7 @@ private String id = UUID.randomUUID().toString();
     @Enumerated(EnumType.STRING)
     private StatusRDV status;
     @ManyToOne
+    @JsonProperty(access= JsonProperty.Access.WRITE_ONLY)
     private Patient patient;
     @ManyToOne
     private Medecin medecin;

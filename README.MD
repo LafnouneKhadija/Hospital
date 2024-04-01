@@ -75,3 +75,8 @@
 <h4>Aprés on fait run "HospitalApplication"</h4>
 <img src="Captures/c8.PNG">
 <img src="Captures/c9.PNG">
+<h4>On cree un nouveau package "web" dans laquel on ajoute une classe "PatientRestController"</h4>
+<img src="Captures/cc.PNG">
+<h4>pour ne pas afficher les patients en json on modifie la classe "RendezVous"</h4>
+<img src="Captures/ca.PNG">
+<img src="Captures/pat.PNG">
