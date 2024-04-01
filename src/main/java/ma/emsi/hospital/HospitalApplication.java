@@ -66,15 +66,19 @@ public class HospitalApplication  {
             rendezVous.setStatus(StatusRDV.PENDING);
             rendezVous.setPatient(patient);
             rendezVous.setMedecin(medecin);
-            rendezVousRepository.save(rendezVous);
+            // declarer la variable
+            RendezVous saveDRDV = iHospitalService.saveRDV(rendezVous);
+            //donner au client le numero de RDV
+            System.out.println(saveDRDV.getId());
 
             //on cree consultation
-            RendezVous rendezVous1=rendezVousRepository.findById(1L).orElse(null);
+           // RendezVous rendezVous1=rendezVousRepository.findById(1L).orElse(null);
+            RendezVous rendezVous1=rendezVousRepository.findAll().get(0);
             Consultation consultation=new Consultation();
             consultation.setDateConsultation(new Date());
             consultation.setRendezVous(rendezVous1);
             consultation.setRapport("Rapport de la consultation");
-            consultationRepository.save(consultation);
+            iHospitalService.saveConsultation(consultation);
         };
     }
 

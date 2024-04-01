@@ -41,7 +41,7 @@
 <h4>Pour testser on a deux solutions</h4>
 <h4>La premiére </h4>
 <img src="Captures/sol1.PNG">
-<h4>La deuxiéme est le plus recommandé</h4>
+<h4>La deuxiéme est la plus recommandée</h4>
 <img src="Captures/sol2.PNG">
 <h4>On fait run </h4>
 <img src="Captures/h2-sols.PNG">
@@ -55,3 +55,23 @@
 <h4>meme pour Consultation</h4>
 <img src="Captures/cont.PNG">
 <img src="Captures/h2consult.PNG">
+<h4>On crée un autre package pour couche metier "service"</h4>
+<h4>on ajoute une interface</h4>
+<img src="Captures/inter.PNG">
+<h4>on ajoute aussi une classe qui implemente cette interface qui contient les traitements</h4>
+<img src="Captures/c1.PNG">
+<img src="Captures/c2.PNG">
+<h4>On injecte la couche metier dand la classe "HospitalAppliocation"</h4>
+<img src="Captures/inject.PNG">
+<h4> pour donner au client le numero de RDV</h4>
+<h4>Classe "HospitalApplication"</h4>
+<img src="Captures/c7.PNG">
+<h4>La classe "HospitalServiceImpl"</h4>
+<img src="Captures/c4.PNG">
+<h4>on modifie dans "HospitalApplication"</h4>
+<img src="Captures/c5.PNG">
+<h4>On modifie aussi Long par String dans "RendezVousRepository"</h4>
+<img src="Captures/c6.PNG">
+<h4>Aprés on fait run "HospitalApplication"</h4>
+<img src="Captures/c8.PNG">
+<img src="Captures/c9.PNG">

@@ -6,11 +6,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.UUID;
+
 @Entity
 @Data  @NoArgsConstructor @AllArgsConstructor
 public class RendezVous {
-@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+@Id //@GeneratedValue(strategy = GenerationType.IDENTITY)
+private String id = UUID.randomUUID().toString();
     private Date date;
     // pour afficher en string
     @Enumerated(EnumType.STRING)
@@ -21,4 +23,6 @@ public class RendezVous {
     private Medecin medecin;
     @OneToOne(mappedBy = "rendezVous")
     private Consultation consultation;
+
+
 }

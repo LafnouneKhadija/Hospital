@@ -10,7 +10,9 @@ import ma.emsi.hospital.entities.Medecin;
 import ma.emsi.hospital.entities.Patient;
 import ma.emsi.hospital.entities.RendezVous;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RestController;
+
+
+import java.util.UUID;
 
 @Service
 @Transactional
@@ -20,31 +22,31 @@ public class HospitalServiceImpl implements IHospitalService {
    private RendezVousRepository rendezVousRepository;
    private ConsultationRepository consultationRepository;
 
-    public HospitalServiceImpl(PatientRepository patientRepository, MedecinRepository medecinRepository, RendezVousRepository rendezVousRepository, ConsultationRepository consultationRepository) {
+    public HospitalServiceImpl(PatientRepository patientRepository,
+                               MedecinRepository medecinRepository,
+                               RendezVousRepository rendezVousRepository,
+                               ConsultationRepository consultationRepository) {
         this.patientRepository = patientRepository;
         this.medecinRepository = medecinRepository;
         this.rendezVousRepository = rendezVousRepository;
         this.consultationRepository = consultationRepository;
     }
-
     @Override
     public Patient savePatient(Patient patient) {
         return patientRepository.save(patient);
 
     }
-
     @Override
     public Medecin saveMedecin(Medecin medecin) {
 
         return medecinRepository.save(medecin);
     }
-
     @Override
     public RendezVous saveRDV(RendezVous rendezVous) {
-
+        //generer une chaine de caractere aleatoire et unique
+rendezVous.setId(UUID.randomUUID().toString());
         return rendezVousRepository.save(rendezVous);
     }
-
     @Override
     public Consultation saveConsultation(Consultation consultation) {
 
